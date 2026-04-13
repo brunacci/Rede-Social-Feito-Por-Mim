@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1086419825430",
+    "project_id": "microredesocialbruna",
+    "storage_bucket": "microredesocialbruna.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086419825430:android:26a2db6bc76ef7c8a65637",
+        "android_client_info": {
+          "package_name": "br.com.bruna.microredesocial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu-6Ss5BViG9Jes2NGekTRLz_f4piapa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086419825430:android:75dc31dbb64269cea65637",
+        "android_client_info": {
+          "package_name": "com.rdsocial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu-6Ss5BViG9Jes2NGekTRLz_f4piapa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
