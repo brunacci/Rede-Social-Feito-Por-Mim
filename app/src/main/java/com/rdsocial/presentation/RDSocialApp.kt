@@ -8,8 +8,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.rdsocial.presentation.auth.AuthNavHost
 import com.rdsocial.presentation.home.HomeScreen
+import com.rdsocial.presentation.navigation.NavRoutes
+import com.rdsocial.presentation.profile.ProfileScreen
 
 @Composable
 fun RDSocialApp(
@@ -23,7 +28,22 @@ fun RDSocialApp(
             .systemBarsPadding(),
     ) {
         if (authUser != null) {
-            HomeScreen()
+            val navController = rememberNavController()
+            NavHost(
+                navController = navController,
+                startDestination = NavRoutes.Home,
+            ) {
+                composable(NavRoutes.Home) {
+                    HomeScreen(
+                        onNavigateToProfile = { navController.navigate(NavRoutes.Profile) },
+                    )
+                }
+                composable(NavRoutes.Profile) {
+                    ProfileScreen(
+                        onNavigateBack = { navController.popBackStack() },
+                    )
+                }
+            }
         } else {
             AuthNavHost()
         }

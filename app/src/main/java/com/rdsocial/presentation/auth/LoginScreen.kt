@@ -62,7 +62,7 @@ fun LoginScreen(
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             Image(
-                painter = painterResource(R.drawable.ic_launcher_foreground),
+                painter = painterResource(R.drawable.logo),
                 contentDescription = stringResource(R.string.logo_content_description),
                 modifier = Modifier.size(120.dp),
             )

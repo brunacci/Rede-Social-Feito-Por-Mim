@@ -1,7 +1,14 @@
 package com.rdsocial
 
 import android.app.Application
+import com.google.firebase.FirebaseApp
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class RdSocialApplication : Application()
+class RdSocialApplication : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+        FirebaseApp.initializeApp(this)
+    }
+}
