@@ -11,11 +11,9 @@
     <string name="action_go_register">Criar conta</string>
     <string name="action_have_account">Já tenho uma conta</string>
     <string name="home_title">Home</string>
-    <string name="home_subtitle">Feed em breve</string>
     <string name="home_search_label">Buscar por cidade</string>
     <string name="home_empty_state">Nenhuma postagem encontrada.</string>
     <string name="home_post_image_content_description">Imagem da postagem</string>
-    <string name="action_refresh">Atualizar</string>
     <string name="action_create_post">Criar postagem</string>
     <string name="action_load_more">Carregar mais</string>
     <string name="action_go_profile">Abrir perfil</string>
@@ -34,7 +32,6 @@
     <string name="create_post_image_preview_description">Pré-visualização da imagem selecionada</string>
     <string name="create_post_description_label">Descrição</string>
     <string name="create_post_use_current_location">Usar localização atual</string>
-    <string name="create_post_city_optional">Cidade opcional</string>
     <string name="create_post_publish">Publicar</string>
     <string name="action_cancel">Cancelar</string>
     <string name="error_post_image_required">Selecione uma imagem para publicar.</string>
